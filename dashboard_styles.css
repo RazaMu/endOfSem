@@ -1,0 +1,90 @@
+/* new_dashboard_styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    background-color: #f0f0f0;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a keyframes animation for the link hover effect */
+@keyframes hoverAnimation {
+    0% {
+        background-color: #f0f0f0;
+        transform: translateY(0);
+    }
+    50% {
+        background-color: #e0e0e0;
+        transform: translateY(-5px);
+    }
+    100% {
+        background-color: #e0e0e0;
+        transform: translateY(-3px);
+    }
+}
+
+nav ul li a:hover {
+    animation: hoverAnimation 0.5s ease forwards;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
